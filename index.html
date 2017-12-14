@@ -110,23 +110,51 @@
             <li>undefind === undefined true</li>
             <li>NaN === NaN false (!!wyjątek!!)</li>
             <li>infinity === infinity</li>
-            <li>" " czyli pusty string przypisany do zmiennej zwraca false</li>
+            <li>" " czyli pusty string; 0 ; null; undefined; NaN (przypisane do zmiennej) zwracają false</li>
+            <li>obeikty z założenia zwracają true - patrz poniżej</li>
         </ul>
-        <li>Za pomocą jakiej funckcji srawdzisz dowolną wartość? np. za pomocą boolean</li>
+        <li>Za pomocą jakiej funckcji srawdzisz dowolną wartość? np. za pomocą Boolean() np. Boolean([]) lub !![ ]</li>
         <li>Co oznacza zapis x?y:v? jeżeli true to y a jeżeli falese v</li>
-        <li>Co oznaczają operatory: można je porównać do działań matematyczno logicznych</li>
+        <li>Co oznaczają operatory: można je porównać do działań matematyczno logicznych; są lgiczne, matematyczne i przypisania</li>
         <li>W jakiej kolejności będzie wykonane to zadanie: false||!false&&true</li>
+        <li>Kolejność</li>
+            <ol>
+                <li>() jeżeli jest</li>
+                <li>!</li>
+                <li>&&</li>
+                <li>||</li>
+            </ol>
+        <li>dlaczego null + 5 = 5 ale undefined + 5 = NaN;</li>
+        <li>null + 3 === || !(5-5)&&"1"*10>=10</li>
+        <ol>
+            <li>najpierw działanie w nawiasie czyli zero, które ma wartość false</li>
+            <li>negacja logiczna czyli "!" zmienia na false i następnie na true</li>
+            <li>mnożenie "1"*10 następuje konwersja na number = 10</li>
+            <li>teraz dodawanie - podczas konwersji null zamienianiane jest na 0 -> zostaje więc 3</li>
+            <li>następnie >= a więc true</li>
+            <li>na koniec === porównanie też true bo 3 ===3 </li>
+            <li>&& czyli logiczne i też true </li>
+            <li>|| też daje true</li>
+        </ol>
     </ol>
 
 </ol>
 <h3>Dzień 6</h3>
 <ol>
-    <li>Jakie wartości przyjmuje typ boolean</li>
+    <li>Czym jest operator w JS?</li>
+    <li>Co zostanie zwrócone?</li>
     <ul>
-        <li>true</li>
-        <li>false</li>a
+        <li>5||4  5 bo lub i oba na true</li>
+        <li>true||false true </li>
+        <li>false||"" zwraca "" bo na tym się zatrzymał</li>
+        <li>null||undefined zwraca undefined</li>
+        <li>false||0||""||null - zwraca null </li>
+        <li>0&&NaN zwraca 0 bo przy operatorze lub nie trzeba sprawdzać dalej jak na początku jest null</li>
     </ul>
     <li>Podaj wyniki działań: true / false</li>
+    <li>Kiedy użuwamy wartości undefined? np. przy deklaracji zmiennej bez jej inicjalizacji undefined się pojawia ale jako takiego zapisu z undefined nie używa się. Ale używa się null. Undefined jest generowane przez silnik przeglądarki.</li>
+    <li>UWAGA! typeOf null ZWRACA object co jest BŁĘDEM JS!!</li>
+    <li>Uwaga! null + liczba = liczba ale undefined + liczba = NaN</li>
 </ol>
 
 </body>

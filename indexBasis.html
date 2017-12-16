@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My Challenge</title>
+        <style>
+            body{
+                font-family: Arial;
+            }
+        </style>
+    </head>
+    <body>
+    <h1>My Challenge</h1>
+    <h3>Dzień 1</h3>
+    <ol>
+        <li>Zmienna w JS - jest kontenerem, niejako "szufladą" pozwalającą na przechowywanie/zapisywanie danych różnego typu</li>
+        <li>Celem zmiennych jest - zapisywanie/przechowywanie danych</li>
+        <li>3 główne elementy zmiennych:
+            <ul>
+                <li>nazwa</li>
+                <li>miejsce w pamięci</li>
+                <li>wartość</li>
+            </ul>
+        <li>CamelCaseVariable</li>
+        <li>Deklaracja a inicjalizacja - deklaracja nie obejmuje przypisania konkretnej wartości do zmiennej a więc samo "var home;" jest deklaracją. Zaś inicjalizacja rozszerza powyższe działanie o oprator przypisania i wartość</li>
+        <li>3 słowa kluczowe:</li>
+            <ul>
+                <li>var</li>
+                <li>let</li>
+                <li>const (jej nie da się nadpisać!)</li>
+            </ul>
+        <li>Przypisanie zmiennej odbywa się za pomocą znaku równości</li>
+        <li>Nadpisanie var name = name = "Maciek"</li>
+    </ol>
+
+    <h3>Dzień 2</h3>
+    <ol>
+        <li>Co to jest instrukcja - to polecenie dla komputera zapisane zrozumiałym dla niego językiem; inaczej mówiąc jest to podstawowa jednostka kodu zakończona średnikiem. Instrukcje zazwyczaj wykonywane są od góry do dołu i od lewej do praw</li>
+        <li>Dwa sposoby oznaczania komenetarzy:</li>
+        <ul>
+            <li>/*     */</li>
+            <li><--!   --></li>
+            <li>//...</li>
+        </ul>
+        <li>Typ zmiennej - opisuje tym danych w niej przechowywanych</li>
+        <li>Dwa typy zmiennych w JS:</li>
+        <ul>
+            <li>String</li>
+            <li>Number</li>
+            <li>Boolean</li>
+        </ul>
+        <li>Obiekt główny w JS wbudowany w przeglądarkę to WINDOW</li>
+        <li>var imie = "Paweł";</li>
+    </ol>
+
+    <h3>Dzień 3</h3>
+    <ol>
+        <li>Co to są "typy proste" - to: </li>
+        <ul>
+            <li>string</li>
+            <li>number</li>
+            <li>boolean</li>
+            <li>undfined</li>
+            <li>null</li>
+            <li>symbol</li>
+        </ul>
+        <li>Typy referencyjne - obiekt czyli Object</li>
+        <li>Oraz jego Podtypy:</li>
+        <ul>
+            <li>Function</li>
+            <li>Array</li>
+        </ul>
+        <li>W JS - zmienna nie ma typu!</li>
+        <li>W JS - wartość zmiennej jest określonego typu!</li>
+        <li>Co to jest literał - inicjalizuje zmienną; jeżeli jest stringiem to jako string inicjalizuje zmienną</li>
+        <li>Do czego służy operator typeof - służy do określenia typu danych zawartych w danej zmiennej</li>
+        <li>Co się stanie gdy wartość typu prostego jednej zmiennej zostanie przypisanie innej zmiennej? Obie mają tę samą wartość</li>
+        <li>typeOf - to operator jednoargumentowy</li>
+    </ol>
+    <h3>Dzień 4</h3>
+    <ol>
+        <li>Jak będzie wyglądał zapis 50% = 50/100 </li>
+        <li>Pojęcie bitów - </li>
+        <li>Sposób na znalezienie liczby max i min:</li>
+        <ul>
+            <li>Function</li>
+            <li>Array</li>a
+        </ul>
+        <li>Do czego służą operatory</li>
+        <li>NaN = not a number</li>
+        <li>Zaokrąglanie liczby - Math.floor lub Math.toFixed()</li>
+        <li>Infinity - to nieskończoność</li>
+
+    </ol>
+    <h3>Dzień 5</h3>
+    <ol>
+        <li>Jakie wartości przyjmuje typ boolean</li>
+        <ul>
+            <li>true</li>
+            <li>false</li>a
+        </ul>
+        <li>Podaj wyniki działań: true / false</li>
+        <ul>
+            <li>5>3 true</li>
+            <li>5==3 false</li>
+            <li>5 === "3" false</li>
+            <li>"5"! == 5 true</li>
+            <li>"5" != 5 false</li>
+            <li>5 >= 3 true</li>
+            <li>undefind === undefined true</li>
+            <li>NaN === NaN false (!!wyjątek!!)</li>
+            <li>infinity === infinity</li>
+            <li>" " czyli pusty string; 0 ; null; undefined; NaN (przypisane do zmiennej) zwracają false</li>
+            <li>obeikty z założenia zwracają true - patrz poniżej</li>
+        </ul>
+        <li>Za pomocą jakiej funckcji srawdzisz dowolną wartość? np. za pomocą Boolean() np. Boolean([]) lub !![ ]</li>
+        <li>Co oznacza zapis x?y:v? jeżeli true to y a jeżeli falese v</li>
+        <li>Co oznaczają operatory: można je porównać do działań matematyczno logicznych; są lgiczne, matematyczne i przypisania</li>
+        <li>W jakiej kolejności będzie wykonane to zadanie: false||!false&&true</li>
+        <li>Kolejność</li>
+            <ol>
+                <li>() jeżeli jest</li>
+                <li>!</li>
+                <li>&&</li>
+                <li>||</li>
+            </ol>
+        <li>dlaczego null + 5 = 5 ale undefined + 5 = NaN;</li>
+        <li>null + 3 === || !(5-5)&&"1"*10>=10</li>
+        <ol>
+            <li>najpierw działanie w nawiasie czyli zero, które ma wartość false</li>
+            <li>negacja logiczna czyli "!" zmienia na false i następnie na true</li>
+            <li>mnożenie "1"*10 następuje konwersja na number = 10</li>
+            <li>teraz dodawanie - podczas konwersji null zamienianiane jest na 0 -> zostaje więc 3</li>
+            <li>następnie >= a więc true</li>
+            <li>na koniec === porównanie też true bo 3 ===3 </li>
+            <li>&& czyli logiczne i też true </li>
+            <li>|| też daje true</li>
+        </ol>
+    </ol>
+
+</ol>
+<h3>Dzień 6</h3>
+<ol>
+    <li>Czym jest operator w JS?</li>
+    <li>Co zostanie zwrócone?</li>
+    <ul>
+        <li>5||4  5 bo lub i oba na true</li>
+        <li>true||false true </li>
+        <li>false||"" zwraca "" bo na tym się zatrzymał</li>
+        <li>null||undefined zwraca undefined</li>
+        <li>false||0||""||null - zwraca null </li>
+        <li>null&&" " null bo wystarczy jeden null by cały warunek był nieprawdziwy</li>
+        <li>0&&NaN zwraca 0 bo przy operatorze lub nie trzeba sprawdzać dalej jak na początku jest null</li>
+    </ul>
+    <li>Podaj wyniki działań: true / false</li>
+    <li>Kiedy użuwamy wartości undefined? np. przy deklaracji zmiennej bez jej inicjalizacji undefined się pojawia ale jako takiego zapisu z undefined nie używa się. Ale używa się null. Undefined jest generowane przez silnik przeglądarki.</li>
+    <li>UWAGA! typeOf null ZWRACA object co jest BŁĘDEM JS!!</li>
+    <li>Uwaga! null + liczba = liczba ale undefined + liczba = NaN</li>
+</ol>
+<h3>Dzień 7 var</h3>
+<ol>
+    <li>Czym jest zmienna w JS? "pojemnik przechowujący dane" itp.</li>
+    <li>Trzy słowa kluczowe przy tworzeniu zmiennych</li>
+    <ul>
+        <li>var</li>
+        <li>const</li>
+        <li>let</li>
+    </ul>
+    <li>deklaracja zmiennej w odróżnieniu od inicjalizacji pozostawia zmienną bez przypisania jej wartośći a więc domyślnie silnik js nadaje jej wartość undefined. i tu Uwaga! jeżeli najpierw deklarujemy zmienną a później nadajemy jej wartość lub ją nadpisujemy - nie używamy już po raz drugi słowa kluczowego var!</li>
+    <li>literał </li>
+    <li>słowa zastrzeżone przy tworzeniu (nazwy) zmiennej: var (np. var var ;P), function, true, class itp.</li>
+</ol>
+<h3>Dzień 8 zasięg zmiennych</h3>
+<ol>
+    <li>Jakie są dwa zasięgi zmiennych: lokalny i globalny</li>
+    <li>Jaka jest różnica między zasięgiem globalnym i lokalnym</li>
+    <ul>
+        <li>zasięg lokalny - </li>
+        <li>zasięg globalny - </li>
+    </ul>
+    <li>Zasięg lokalny / globalny w:</li>
+    <ul>
+        <li>var</li>
+        <li>let</li>
+        <li>const</li>
+    </ul>
+    <li>Czym jest przysłanianie</li>
+    <li>Gdzie są dostępne zmienne lokalne i globalne</li>
+    <li>Jak stworzyć zmienną bez słowa kluczoweg</li>
+    <li>Czym jest operand?</li>
+    <li>Wypróbuj w konsoli obiekt opakowujący (new)</li>
+    <li>Różnica między właściwością a metodą? metoda jest to funkcja wykorzystywana w obiekcie zaś właściwość to </li>
+    <li></li>
+</ol>
+
+</body>
+</html>

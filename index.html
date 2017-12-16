@@ -149,6 +149,7 @@
         <li>false||"" zwraca "" bo na tym się zatrzymał</li>
         <li>null||undefined zwraca undefined</li>
         <li>false||0||""||null - zwraca null </li>
+        <li>null&&" " null bo wystarczy jeden null by cały warunek był nieprawdziwy</li>
         <li>0&&NaN zwraca 0 bo przy operatorze lub nie trzeba sprawdzać dalej jak na początku jest null</li>
     </ul>
     <li>Podaj wyniki działań: true / false</li>
@@ -156,18 +157,39 @@
     <li>UWAGA! typeOf null ZWRACA object co jest BŁĘDEM JS!!</li>
     <li>Uwaga! null + liczba = liczba ale undefined + liczba = NaN</li>
 </ol>
-<h3>Dzień 7 var scope i hoisting</h3>
+<h3>Dzień 7 var</h3>
 <ol>
     <li>Czym jest zmienna w JS? "pojemnik przechowujący dane" itp.</li>
-    <li>Co zostanie zwrócone?</li>
+    <li>Trzy słowa kluczowe przy tworzeniu zmiennych</li>
     <ul>
-        <li>5||4  5 bo lub i oba na true</li>
-        <li>true||false true </li>
-        <li>false||"" zwraca "" bo na tym się zatrzymał</li>
-        <li>null||undefined zwraca undefined</li>
-        <li>false||0||""||null - zwraca null </li>
-        <li>0&&NaN zwraca 0 bo przy operatorze lub nie trzeba sprawdzać dalej jak na początku jest null</li>
+        <li>var</li>
+        <li>const</li>
+        <li>let</li>
     </ul>
+    <li>deklaracja zmiennej w odróżnieniu od inicjalizacji pozostawia zmienną bez przypisania jej wartośći a więc domyślnie silnik js nadaje jej wartość undefined. i tu Uwaga! jeżeli najpierw deklarujemy zmienną a później nadajemy jej wartość lub ją nadpisujemy - nie używamy już po raz drugi słowa kluczowego var!</li>
+    <li>literał </li>
+    <li>słowa zastrzeżone przy tworzeniu (nazwy) zmiennej: var (np. var var ;P), function, true, class itp.</li>
+</ol>
+<h3>Dzień 8 zasięg zmiennych</h3>
+<ol>
+    <li>Jakie są dwa zasięgi zmiennych: lokalny i globalny</li>
+    <li>Jaka jest różnica między zasięgiem globalnym i lokalnym</li>
+    <ul>
+        <li>zasięg lokalny - </li>
+        <li>zasięg globalny - </li>
+    </ul>
+    <li>Zasięg lokalny / globalny w:</li>
+    <ul>
+        <li>var</li>
+        <li>let</li>
+        <li>const</li>
+    </ul>
+    <li>Czym jest przysłanianie</li>
+    <li>Gdzie są dostępne zmienne lokalne i globalne</li>
+    <li>Jak stworzyć zmienną bez słowa kluczoweg</li>
+    <li>Czym jest operand?</li>
+    <li>Wypróbuj w konsoli obiekt opakowujący (new)</li>
+    <li>Różnica między właściwością a metodą? metoda jest to funkcja wykorzystywana w obiekcie zaś właściwość to </li>
 </ol>
 
 </body>

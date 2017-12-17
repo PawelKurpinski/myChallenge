@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Będę programistą - zmienne</title>
-    </head>
-    <body>
-        <h1>Już niedługo będę świetym programistą!!!</h1>
 
-        <script>
+<head>
+    <meta charset="utf-8">
+    <title>Będę programistą - zmienne</title>
+</head>
 
-            function one(){PL
+<body>
+    <h1>Już niedługo będę świetym programistą!!!</h1>
 
-                var a = "zmienna lokalna";
-            }
-            one();
-            console.log(a);
+    <script>
 
-            console.log("-------------------");
-        </script>
+        var b = "zmienna globalna 1";
 
-    </body>
+        var c = "zmienna globalna 2"
+        function one() {
+            var a = "zmienna lokalna";
+            console.log(b);
+        }
+        one();
+
+        console.log(c);
+
+        console.log(a);
+
+        console.log("-------------------");
+    </script>
+
+</body>
+
 </html>

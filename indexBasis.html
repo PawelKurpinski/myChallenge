@@ -180,13 +180,13 @@
     </ul>
     <li>Zasięg lokalny / globalny w:</li>
     <ul>
-        <li>var</li>
+        <li>var - w funkcji jest lokalna ale już w instrukcji warunkowej czyli w innych blokach niż funkcja var jest zawsze globalny</li>
         <li>let "nie dodaje" się jak var do obiektu window; bardzo ważne jest również to że let np. w instrukcji warunkowej w odróżnieniu od var nie staje się zmienną globalną(np. if "nie chroni" zakresu tak jak funkcja)</li>
         <li>const</li>
     </ul>
-    <li>Czym jest przysłanianie to mechanizm w JS który sprawia, że zmienna zadeklarowana globalnie lub lokalnie ale z kolejną funkcją w niej jest nadpisywana przez funkcje niższego "rzędu"</li>
-    <li>Gdzie są dostępne zmienne lokalne i globalne - globalnie wszędzie również w funkcjach; lokalne tylko lokalnie</li>
-    <li>Jak stworzyć zmienną bez słowa kluczowego - przypisując do np. litery określoną wartość (c = "aaa"). Wówczas jeżeli to zrobimy w funkcji to będzie ona dostępna globalnie</li>
+    <li>Przysłanianie - to mechanizm w JS który sprawia, że zmienna zadeklarowana globalnie lub lokalnie ale z kolejną funkcją (funkcja w funkcji = zasięg lokalny w innym zasięgu lokalnym) w niej jest nadpisywana przez funkcje niższego "rzędu". Jeżeli funkcja "najgłębiej zagnieżdżona" nie ma zmiennej np. a którą chcę wyświetlić -> "sięga" do szerszego zasięgu aż do zmiennej globalnej (jeżeli nie ma innych a i zmienna globalna też ma nazwę "a")</li>
+    <li>Dostępność zmiennych lokalnych i globalnych - globalne zmiene są dostępne wszędzie również w funkcjach; lokalne tylko lokalnie</li>
+    <li>Jak stworzyć zmienną bez słowa kluczowego - przypisując do np. litery określoną wartość (c = "aaa"). Wówczas jeżeli to zrobimy nawet w funkcji to będzie ona dostępna globalnie</li>
     <li>Czym jest operand - argument - operatory wykonują działania na operandach</li>
     <li>Wypróbuj w konsoli obiekt opakowujący (new)</li>
     <li>Różnica między właściwością a metodą? metoda jest to funkcja wykorzystywana w obiekcie zaś właściwość to </li>

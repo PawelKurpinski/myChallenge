@@ -12,13 +12,19 @@
     <script>
 
         var b = "zmienna globalna 1";
+        var c = "zmienna globalna 2";
 
-        var c = "zmienna globalna 2"
         function one() {
             var a = "zmienna lokalna";
-            console.log(b);
+            console.log(a);
         }
         one();
+
+        function two() {
+            let d = "zmienna lokalna let";
+            console.log(d);
+        }
+        two();
 
         console.log(c);
 

@@ -15,7 +15,7 @@
         var c = "zmienna globalna 2";
 
         function one() {
-            var a = "zmienna lokalna";
+            var a = "zmienna lokalna z funkcji";
             console.log(a);
         }
         one();
@@ -28,9 +28,24 @@
 
         console.log(c);
 
-        console.log(a);
-
         console.log("-------------------");
+
+        var e = "dzień";
+        function three(){
+            var e = "noc";
+            console.log(e);
+        }
+        three();
+        console.log(e);
+
+        var one = "syn";
+        console.log(one);
+
+        one = "corka";
+        console.log(one);
+
+
+
     </script>
 
 </body>

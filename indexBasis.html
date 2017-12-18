@@ -195,9 +195,14 @@
 <h3>Dzień 9 Hoisting</h3>
 <ol>
     <li>Na czym polega hoisting i jego dwa procesy</li>
+    <li>Uwaga! hoisting dotyczy deklaracji zmiennych i funkcji a nie wyrażeń funkcyjnych!:<br>
+    <b>var name = function()</b>{<br> ciało funkcji<br> };<br>
+    hoistowany w całości będzie będzie zapis:<br>
+    function name(){<br> ciało funkcji<br>};</li>
     <ul>
         <li>analiza kodu przez silnik JS - wyszukanie deklaracji funkcji i zmiennych</li>
-        <li>powtórne czytanie kodu wraz z przenoszeniem DEKLARACJI zmiennych BEZ inicjalizacji oraz DEKLARACJI funkcji; <br>UWAGA! Przeniesienie odbywa sie na początek ZASIĘGU BLOKOWEGO! </li>
+        <li>powtórne czytanie kodu wraz z przenoszeniem DEKLARACJI zmiennych BEZ inicjalizacji oraz DEKLARACJI funkcji; <br>UWAGA! Przeniesienie odbywa sie na początek ZASIĘGU BLOKOWEGO! <br>
+        UWAGA! FUNKCJE mają najwyższy priorytet niezależnie od ich położenia w kodzie źródłowym</li>
     </ul>
     <li>Jaka jest różnica między zasięgiem globalnym i lokalnym</li>
     <ul>

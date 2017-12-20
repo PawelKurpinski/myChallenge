@@ -211,6 +211,41 @@
     </ul>
 
 </ol>
+<h3>Dzień 10 var const i let</h3>
+<ol>
+    <li>Jeżeli chcę uzyskać zakres blokowy wykorzystuję zmienną utworzoną za pomocą słowa kluczowego </li>
+
+    <li>var
+    <ul>
+    <li>używać tak rzadko jak się da;</li>
+    <li>zakres blokowy: NIE; (zadeklarowana globalnie zmienna bez problemu zostaje nadpisana lokalnie)
+    hoisting: TAK;</li>
+    <li>ponowna deklaracja: TAK = napisanie;</li>
+    <li>dodanie do obiektu Window: TAK</li>
+    </ul>
+
+    <li>let
+    <ul>
+    <li>należy używać tak często jak się da</li>
+    <li>zakres blokowy: tak (w tym dla funkcji)</li>
+    <li>hoisting: nie</li>
+    <li>ponowna deklaracja: TAK = nadpisanie</li>
+    <li>dodanie do obiektu Window: NIE</li>
+    </ul>
+</li>
+
+    <li>const
+    <ul>
+    <li>zakres blokowy: tak (w tym dla funkcji)</li>
+    <li>ponowna deklaracja: NIE = BŁĄD!</li>
+    <li>dodanie do obiektu Window: NIE</li>
+    <li>zabezpiecza przed zminaą wartość: TAK (OPRÓCZ OBIEKTÓW np. daną tablicę mogę modyfikować, ale tylko ten określony egzemplarz)</li>
+    <li>zabezpiecza zmienną: TAK (przed nadpisaniem)</li>
+    </ul>
+</li>
+</ol>
+
+
 
 </body>
 </html>

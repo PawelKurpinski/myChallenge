@@ -267,18 +267,21 @@
                 ciało funckji
             }
             </li>
+            <li>UWAGA! ciekawostka z ES6!!<br>
+                zamiast "string"+""+"string" można pisać `${string}${string}`
+            </li>
         </ul>
         <li>Tworzenie nowch elemenentów - ceateNewElement</li>
         <li>Math.random - służy do losowania liczb w zakresie 0 do 1 ale bez 1</li>
     </li>
 </ol>
 
-<h3>Dzień 12 </h3>
+<h3>Dzień 12 instrukcja warunkowa if</h3>
 <ol>
     <li>W instrukcjach warunkowych następuje konwersja do typu prostego Boolien</li>
     <li>Uwaga!var nie tworzy w instrukcji zakresu lokalnego ale let i const TAK!</li>
     <li>Skrócony zapis instrukcji warunkowej if?<br>
-    (warunek)?(alert="ok!"):(alert="zła odp");<br>
+    (warunek)?alert("ok!"):alert("zła odp");<br>
     if(warunek)alert("ok!"); - Tak też można napsiać
     </li>
     <li>
@@ -288,6 +291,19 @@
         <li>Tworzenie nowch elemenentów - ceateNewElement</li>
         <li>Math.random - służy do losowania liczb w zakresie 0 do 1 ale bez 1</li>
     </li>
+    <li>Z bloku kodu: <br>
+    let a = "jeden";<br>
+    let b = a;<br>
+    i teraz gdy dodam zapis zmeniający wartość zmiennej "a":<br>
+    a = "dwa";<br>
+    sprawdzając:<br>
+    console.log(a);<br>
+    console.log(b);<br>
+    otrzymamy: <br>
+    dwa(czemu nie dwa? Bo w zmienej została zapisana <b>wartosć</b>pierwotna zmiennej)<br>
+    jeden<br>
+    </li>
+    <li>Co jednak się dzieje w przypadku typów referencyjnych czyli obiektów? Tu sprawa jest inna bo w zmiennych już ne przechodujemy obiektów a <b>odwołania = referencje do danego obiektu!</b><br></li>
 </ol>
 
 

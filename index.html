@@ -424,7 +424,7 @@
         }
 
         doSomething();
-        console.log(something);zie błąd
+        console.log(something);
 
         const p = ["a", 123];
 
@@ -449,23 +449,52 @@
             console.log(something);
         }
 
-        doSomething();
-        console.log(something);
+
 
         <!--callback -->
 
-        function dodaj(x,y){
-            return x+y;
+        function dodaj(x,f){
+            return x+f;
         }
-        function odejmij(x,y){
-            return x-y;
+        function odejmij(x,f){
+            return x-f;
         }
         function calc(a, b, callback){
             console.log(`wprowadzone zostały wartości: ${a} i ${b}`);
             return callback(a,b);
+            // zapis z nawiasami to konkatenacja z ES6
         }
-        calc(10, 20, dodaj)
-        // powyżej następuje wywłanie funkcji poprzez przekazanie do niej trzech parametrów; UWAGA! trzecim jest zadeklarowana powyżej funkcja!
+        const value = calc(10, 20, dodaj)
+        // powyżej następuje wywłanie funkcji poprzez przekazanie do niej trzech parametrów; UWAGA! trzecim jest zadeklarowana powyżej funkcja dodaj!
+        console.log(`wynik to: ${value}`);
+
+        console.log("------------przykład dwa-------------");
+
+        function pokazWKonsoli(t){
+            console.log(t);
+        }
+
+        function pokazAlert(t){
+            alert(t);
+        }
+        function pokazGdzies(w, callback){
+            callback(w);
+        }
+        pokazGdzies("aaa", pokazAlert);
+
+        // UWAGA! parametry t oraz w mogą być różne ale i takie same to nie ma znaczenia!
+
+        const nazwa = (a,b) => {
+            return a*b;
+        }
+
+        const square = a => a*a;
+
+        function mojaFunkcyjka(a){
+            alert("fura"+" " + a +" "+"jest super");
+        }
+        mojaFunkcyjka("Pawła");
+        console.log(mojaFunkcyjka);
     </script>
 
 </body>

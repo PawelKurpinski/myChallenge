@@ -14,11 +14,32 @@
                 height: 5px;
                 border-radius: 50%;
                 background-color: #000;
-                position: absolute;;
+                position: absolute;
             }
+            .newColor{
+                background-color: red;
+                width: 10px;
+                height: 10px;
+            }
+
+            button{
+                margin-left: 50%;
+                margin-right: 50%;
+                margin-top: 10%;
+                border-radius: 3px;
+            }
+            button:hover{
+                font-weight: bold;
+            }
+            span{
+                background: yellow;
+            }
+
         </style>
     </head>
     <body>
+
+    <button onclick="changeColor()">Mój super Guzik</button>
 
     <script type="text/javascript">
     let active = false;
@@ -35,14 +56,19 @@
     let onOffFunc = () =>{
         active = !active;
     }
-    // let offFunc = () =>{
-    //     active = false;
-    // }
+    let offFunc = () =>{
+        active = false;
+    }
+        function changeColor(){
+            var myDiv = document.querySelectorAll('div');
+            console.log(myDiv);
+            for (i=0; i<myDiv.length; i++)
+	        myDiv[i].classList.add('newColor');
+        };
 
         document.body.addEventListener("mousemove", drawFunc);
         // document.body.addEventListener("mouseup", offFunc);
         document.body.addEventListener("mousedown", onOffFunc);
-
 
     </script>
 

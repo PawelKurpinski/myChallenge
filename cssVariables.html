@@ -8,15 +8,43 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <style>
-
-
+    html{
+        font-size: 20px;
+        font-family: 'Monda', sans-serif;
+    }
+    body{
+        margin: 0;
+        height: 100vh;
+        background-image:url('foto.jpg');
+        background-size: cover;
+        background-position: bottom center;
+    }
+    .night{
+        height: 100vh;
+        background-color: black;
+        opacity: .3;
+    }
+    .neon{
+        font-size: 4rem; /*(odniesienie do html)*/
+        color: #47ff00;
+        position: absolute;
+        left: 5%;
+        bottom: 3%;
+        letter-spacing: .2rem;
+        text-shadow: rgba(255,255,255, 0.8) 0 0 40px;
+    }
+    input{
+        position: absolute;
+        left: 5%;
+        bottom: 25%;
+    }
     </style>
 </head>
 
 <body>
-    <div class="nigth"></div>
-    <div class="neon" <i class="fa fa-lightbulb-o" aria-hidden="true"></i><span>100</span>%</div>
-
+    <div class="night"></div>
+    <div class="neon"><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Na <span>100</span>%</div>
+    <input type="range" name="neon" min="0" max="100" value="10">
 
 
     <script>

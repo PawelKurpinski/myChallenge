@@ -39,7 +39,7 @@ y<!DOCTYPE html>
     </head>
     <body>
 
-    <button onclick="changeColor()">Mój super Guzik</button>
+    <button onclick="changeColor()">My super button</button>
 
     <script type="text/javascript">
     let active = false;
@@ -53,7 +53,7 @@ y<!DOCTYPE html>
         div.style.left = `${x}px`;
         document.body.appendChild(div);
     };
-    let onOffFunc = () =>{
+    let onFunc = () =>{
         active = !active;
     }
     let offFunc = () =>{
@@ -68,7 +68,7 @@ y<!DOCTYPE html>
 
         document.body.addEventListener("mousemove", drawFunc);
         // document.body.addEventListener("mouseup", offFunc);
-        document.body.addEventListener("mousedown", onOffFunc);
+        document.body.addEventListener("mousedown", onFunc);
 
     </script>
 

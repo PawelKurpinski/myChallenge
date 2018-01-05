@@ -26,8 +26,8 @@
     .night{
         height: 100vh;
         background-color: black;
-        opacity: calc(1 - var(light));
-        /*zmienna i koniecznie niezbędne spacje obok minusa*?
+        opacity: calc(1 - var(--light));
+        /*zmienna i koniecznie niezbędne spacje obok minusa*/
     }
     .neon{
         font-size: 4rem; /*(odniesienie do html)*/
@@ -36,7 +36,7 @@
         left: 5%;
         bottom: 3%;
         letter-spacing: .2rem;
-        text-shadow: rgba(255,255,255, 0.8) 0 0 40px;
+        text-shadow: rgba(255,255,255, 0.8) 0 0 calc(5 * var(--light));
         opacity: var(--light);
     }
     input{
@@ -67,7 +67,10 @@
 
 
     <script>
-
+        const input = document.querySelector("input");
+        input.addEventListener("change", function(){
+            alert("dupcia");
+        })
 
     </script>
 </body>

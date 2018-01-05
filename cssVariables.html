@@ -8,8 +8,12 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <style>
+    :root{
+        --lite: 0.1;
+        --glow: 5px;
+    }
     html{
-        font-size: 20px;
+        font-size: 14px;
         font-family: 'Monda', sans-serif;
     }
     body{
@@ -22,7 +26,8 @@
     .night{
         height: 100vh;
         background-color: black;
-        opacity: .3;
+        opacity: calc(1 - var(light));
+        /*zmienna i koniecznie niezbędne spacje obok minusa*?
     }
     .neon{
         font-size: 4rem; /*(odniesienie do html)*/
@@ -32,18 +37,26 @@
         bottom: 3%;
         letter-spacing: .2rem;
         text-shadow: rgba(255,255,255, 0.8) 0 0 40px;
-        opacity: .3;
+        opacity: var(--light);
     }
     input{
         position: absolute;
         left: 5%;
         top: 8%;
-        width: 30%;
+        width: 20%;
+        height: 15%;
     }
     .fa{
         font-size: 10rem;
         letter-spacing: 1.5rem;
     }
+
+    @media (min-width 1025px){
+        html{
+            font-size: 20px;
+        }
+    }
+
     </style>
 </head>
 

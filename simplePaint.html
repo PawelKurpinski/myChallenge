@@ -53,21 +53,20 @@ y<!DOCTYPE html>
         div.style.left = `${x}px`;
         document.body.appendChild(div);
     };
-    let onFunc = () =>{
-        active = !active;
+    let onFunc = () =>{               
+        active = !active;		
     }
-    let offFunc = () =>{
+    /*let offFunc = () =>{
         active = false;
-    }
+    }*/
         function changeColor(){
             var myDiv = document.querySelectorAll('div');
-            console.log(myDiv);
             for (i=0; i<myDiv.length; i++)
 	        myDiv[i].classList.add('newColor');
         };
 
         document.body.addEventListener("mousemove", drawFunc);
-        // document.body.addEventListener("mouseup", offFunc);
+        /*document.body.addEventListener("mouseup", offFunc);*/
         document.body.addEventListener("mousedown", onFunc);
 
     </script>

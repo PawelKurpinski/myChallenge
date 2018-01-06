@@ -68,12 +68,22 @@
 
     <script>
 
-    let updateValue = () =>{
-        console.log("lalala");
-    };
+    // let updateValue = () =>{
+    //     console.log(this.value);
+    // }; tu jest problem z thisem?
+
         const input = document.querySelector("input");
         input.addEventListener("change", updateValue);
         input.addEventListener("mousemove", updateValue);
+
+        function updateValue(){
+            const value = (this.value);
+            // console.log(value)
+            const percent = document.querySelector("span");
+            // console.log(percent)
+            percent.textContent = value;
+            document.documentElement.style.setProperty("--light", this.value/100);
+        };
 
     </script>
 </body>

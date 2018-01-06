@@ -44,7 +44,7 @@
         left: 5%;
         top: 8%;
         width: 20%;
-        height: 15%;
+        height: 9%;
     }
     .fa{
         font-size: 10rem;
@@ -67,10 +67,13 @@
 
 
     <script>
+
+    let updateValue = () =>{
+        console.log("lalala");
+    };
         const input = document.querySelector("input");
-        input.addEventListener("change", function(){
-            
-        })
+        input.addEventListener("change", updateValue);
+        input.addEventListener("mousemove", updateValue);
 
     </script>
 </body>

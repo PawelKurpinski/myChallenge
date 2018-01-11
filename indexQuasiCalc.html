@@ -24,17 +24,33 @@
     <button type="button" name="button">odejmowanie</button>
     <button type="button" name="button">mnożenie</button>
     <button type="button" name="button">dzielenie</button>
+    <div id="wynik" style="margin-top: 10px"></div>
 
     <script>
         function suma(){
             var a = document.getElementById('a').value;
             var b = document.getElementById('b').value;
-            if (a,b !== ""&0) {
-
-            a = parseFloat(a);
-            b = parseFloat(b);
-            var suma = a + b;
-            console.log(suma);
+            if (a == "" || b == "") {
+                document.getElementById('wynik').innerHTML = "Proszę uzupełnić obie liczby.";
+            } else {
+                a = parseFloat(a);
+                b = parseFloat(b);
+                var suma = a + b;
+                // console.log(suma);
+                document.getElementById('wynik').innerHTML = "Wynik dodawania wynosi: " + suma + ".";
+            }
+        }
+        function roznica(){
+            var a = document.getElementById('a').value;
+            var b = document.getElementById('b').value;
+            if (a == "" || b == "") {
+                document.getElementById('wynik').innerHTML = "Proszę uzupełnić obie liczby.";
+            } else {
+                a = parseFloat(a);
+                b = parseFloat(b);
+                var suma = a - b;
+                // console.log(suma);
+                document.getElementById('wynik').innerHTML = "Wynik dodawania wynosi: " +różnica + ".";
             }
         }
     </script>

@@ -37,63 +37,25 @@
                 b = parseFloat(b);
                 switch (dzialanie) {
 
-                    case expression:
-
+                    case 1:
+                        document.getElementById('wynik').innerHTML = "Wynik dodawania wynosi: " + (a + b) + ".";
                         break;
-                    default:
-
+                    case 2:
+                        document.getElementById('wynik').innerHTML = "Wynik odejmowania wynosi: " + (a - b) + ".";
+                        break;
+                    case 3:
+                        document.getElementById('wynik').innerHTML = "Wynik mnożenia wynosi: " + (a * b) + ".";
+                        break;
+                    case 4:
+                    if (b == 0) {
+                        document.getElementById('wynik').innerHTML = "Proszę zmienić liczbę w mianowniku - nie może być zerem"
+                    } else {
+                        document.getElementById('wynik').innerHTML = "Wynik dzielenia wynosi: " + (a / b) + ".";
+                        break;
                 }
 
-                var suma = a + b;
-                // console.log(suma);
-                document.getElementById('wynik').innerHTML = "Wynik dodawania wynosi: " + suma + ".";
             }
         }
-        function roznica(){
-            var a = document.getElementById('a').value;
-            var b = document.getElementById('b').value;
-            if (a == "" || b == "") {
-                document.getElementById('wynik').innerHTML = "Proszę uzupełnić obie liczby.";
-            } else {
-                a = parseFloat(a);
-                b = parseFloat(b);
-                var roznica = a - b;
-                // console.log(suma);
-                document.getElementById('wynik').innerHTML = "Wynik dodawania wynosi: " + roznica + ".";
-            }
-        }
-        function iloczyn(){
-            var a = document.getElementById('a').value;
-            var b = document.getElementById('b').value;
-            if (a == "" || b == "") {
-                document.getElementById('wynik').innerHTML = "Proszę uzupełnić obie liczby.";
-            } else {
-                a = parseFloat(a);
-                b = parseFloat(b);
-                var iloczyn = a * b;
-                // console.log(suma);
-                document.getElementById('wynik').innerHTML = "Wynik dodawania wynosi: " + iloczyn + ".";
-            }
-        }
-
-        function iloraz(){
-            var a = document.getElementById('a').value;
-            var b = document.getElementById('b').value;
-            if (a == "" || b == "") {
-                document.getElementById('wynik').innerHTML = "Proszę uzupełnić obie liczby.";
-            } else {
-                a = parseFloat(a);
-                b = parseFloat(b);
-
-                if (b == 0) {
-                    document.getElementById('wynik').innerHTML = "Proszę zmienić liczbę w mianowniku - nie może być zerem"
-                } else {
-                var iloraz = a / b;
-                // console.log(suma);
-                document.getElementById('wynik').innerHTML = "Wynik dzielenia wynosi: " + iloraz + ".";
-            }
-        }
-    }
     </script>
 
 </body>

@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My simple Calc</title>
     <style media="screen">
-        h1{
+        h1 {
             text-transform: uppercase;
         }
-
     </style>
 </head>
+
 <body>
 
     <h1>Proste działania</h1>
@@ -20,14 +21,14 @@
     <br><br>
     <label for="b">Podaj dugą liczbę</label> <input type="text" name="DODAWANIE" id="b">
     <br><br>
-    <button type="button" name="button" onclick="suma()">dodawanie</button>
-    <button type="button" name="button" onclick="roznica()">odejmowanie</button>
-    <button type="button" name="button" onclick="iloczyn()">mnożenie</button>
-    <button type="button" name="button" onclick="iloraz()">dzielenie</button>
+    <button type="button" name="button" onclick="oblicz(1)">dodawanie</button>
+    <button type="button" name="button" onclick="oblicz(2)">odejmowanie</button>
+    <button type="button" name="button" onclick="oblicz(3)">mnożenie</button>
+    <button type="button" name="button" onclick="oblicz(4)">dzielenie</button>
     <div id="wynik" style="margin-top: 10px"></div>
 
     <script>
-        function oblicz(dzialanie){
+        function oblicz(dzialanie) {
             var a = document.getElementById('a').value;
             var b = document.getElementById('b').value;
             if (a == "" || b == "") {
@@ -35,6 +36,7 @@
             } else {
                 a = parseFloat(a);
                 b = parseFloat(b);
+
                 switch (dzialanie) {
 
                     case 1:
@@ -47,16 +49,18 @@
                         document.getElementById('wynik').innerHTML = "Wynik mnożenia wynosi: " + (a * b) + ".";
                         break;
                     case 4:
-                    if (b == 0) {
-                        document.getElementById('wynik').innerHTML = "Proszę zmienić liczbę w mianowniku - nie może być zerem"
-                    } else {
-                        document.getElementById('wynik').innerHTML = "Wynik dzielenia wynosi: " + (a / b) + ".";
-                        break;
-                }
+                        if (b == 0) {
+                            document.getElementById('wynik').innerHTML = "Proszę zmienić liczbę w mianowniku - nie może być zerem.ss"
+                        } else {
+                            document.getElementById('wynik').innerHTML = "Wynik dzielenia wynosi: " + (a / b) + ".";
+                            break;
+                        }
 
+                }
             }
         }
     </script>
 
 </body>
+
 </html>

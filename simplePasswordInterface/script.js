@@ -1,12 +1,13 @@
 
 function checkPassword(){
     var val = document.getElementById('haslo').value;
-    var count = val.length;
+    var count = haslo.length;
+    alert(count);
 
-    if (value == "" || value == 0) {
+    if (val == "" || val == 0) {
         document.getElementById('wynik').innerHTML = "Ogarnij się! wpisz coś coś sensownego!"
     }
-    else if {
+    else if (count >= 7) {
         document.getElementById('wynik').innerHTML;
     }
 }

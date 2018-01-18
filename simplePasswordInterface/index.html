@@ -3,32 +3,31 @@
 
 <head>
 
-	<title>Zadanie JavaScript</title>
-	<meta charset="utf-8">
+    <title>My simple password check</title>
+    <meta charset="utf-8">
 
-	<style>
-
-		h1 { text-transform: uppercase; }
-
-	</style>
+    <style>
+        h1 {
+            text-transform: uppercase;
+        }
+    </style>
 
 </head>
 
 <body>
 
-	<h1>Weryfikacja hasła</h1>
+    <h1>Weryfikacja hasła</h1>
 
-	<label for="haslo">Wpisz hasło:</label> <input type="text" id="haslo">
+    <label for="haslo">Wpisz hasło:</label> <input type="password" id="haslo">
 
-	<!-- type password -->
+    <!-- type password -->
 
-	<br><br>
+    <br><br>
+    <input type="button" value="Weryfikuj" onclick="checkPassword()">
 
-	<input type="button" value="Weryfikuj" onclick="checkPassword()">
+    <div id="wynik" style="margin-top:20px;"></div>
 
-	<div id="wynik" style="margin-top:20px;"></div>
-
-	<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 

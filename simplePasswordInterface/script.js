@@ -1,4 +1,4 @@
-function check(x) {
+function checked(x) {
     var d = x.length;
 
     for (i = 0; i < d; i++) {
@@ -8,15 +8,15 @@ function check(x) {
     return false
 }
 
-function checkPassword() {
+function checkedPassword() {
     var val = document.getElementById('haslo').value;
     var pass = val.length;
 
     if (val == "")
         document.getElementById('wynik').innerHTML = "Ogarnij się! wpisz coś!";
-    else if (pass >= 7 && check(val) == true)
+    else if (pass >= 7 && checkeded(val) == true)
         document.getElementById('wynik').innerHTML = '<span style="color:green;">Hasło jest dobre!</span>';
-    else if (pass >= 4 && pass <= 6 && check(val) == true)
+    else if (pass >= 4 && pass <= 6 && checked(val) == true)
         document.getElementById('wynik').innerHTML = '<span style="color:orange;">Hasło jest średie! Żyjmy coś!</span>';
     else document.getElementById('wynik').innerHTML = '<span style="color:blue;">Hasło jest za słabe! Pobudka!!</span>';
 }

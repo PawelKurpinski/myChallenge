@@ -6,7 +6,7 @@
     <title>HTML Basisc</title>
 
     <style>
-        td{
+        td, th{
             border: 2px solid blue;
         }
     </style>
@@ -18,6 +18,10 @@
         <a href="http://pasja-informatyki.pl" target:"_blank"> Pasja informatyki</a>
 
         <img src="logo.jpg " alt="moje logo " width="250 " height="150 "/>
+
+        <!--ale też zdjęcie może być podlinkowane-->
+
+        <a href="http://pasja-informatyki.pl" target:"_blank"> <img src="logo.jpg" alt="moje logo"> </a>
 
         <!-- zamiast podwójnego br powinno się stosować paragrafy -->
 
@@ -51,13 +55,14 @@
         </table>
 
         <br><br>
-        <!--Jako ciekawostka tabela bez tagów zamykających! oraz z częścią nagłówka tabeli oraz poza tagami td i tr dodano th jako nagłówki tablei - również w wierszach-->
+        <!--Jako ciekawostka tabela może wystąpić bez tagów zamykających! oraz z częścią nagłówka tabeli oraz poza tagami td i tr dodano th jako nagłówki tablei - również w wierszach-->
         <table>
             <thead>
-                <td>Przedmiot</td><td>Nazwisko</td><td>Ocena</td>
+                <tr> <th>Przedmiot <th> Nazwisko <th>Ocena
             <tbody>
-                <td></td>
-
+                <tr> <th>Historia <td>Nowak <td> bdb
+                <tr> <th>Historia <td>Nowak <td> bdb
+                <tr> <th>Historia <td>Nowak <td> bdb
         </table>
 
     </body>

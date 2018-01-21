@@ -1,12 +1,64 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>HTML Basisc</title>
-        <!--znacznik hiperłącza-->
-        <a href="http://pasja-informatyki.pl">Pasja informatyki</a>
-    </head>
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML Basisc</title>
+
+    <style>
+        td{
+            border: 2px solid blue;
+        }
+    </style>
+
+</head>
+
     <body>
+        <!--znacznik hiperłącza-->
+        <a href="http://pasja-informatyki.pl" target:"_blank"> Pasja informatyki</a>
+
+        <img src="logo.jpg " alt="moje logo " width="250 " height="150 "/>
+
+        <!-- zamiast podwójnego br powinno się stosować paragrafy -->
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et iure doloribus accusamus officiis recusandae vel. Doloribus, consequuntur.</p>
+
+        <ol>
+            <li>Królestwa Północy</li>
+            <ul>
+                <li>Keira Metz</li>
+                <li>Sigmud Dijkstra</li>
+            </ul>
+            <li>Cesarstwo Innych</li>
+            <ul>
+                <li>Królestwa Północy</li>
+                <li>Cesarstwo Innych</li>
+            </ul>
+        </ol>
+
+        <table>
+            <tr>
+                <td colspan="2">1</td> <td>3</td>
+            </tr>
+            <tr>
+                <td rowspan="2">4</td><td>5</td><td>6</td>
+            </tr>
+            <tr>
+                <td>8</td><td>9</td>
+            </tr>
+
+        </table>
+
+        <br><br>
+        <!--Jako ciekawostka tabela bez tagów zamykających! oraz z częścią nagłówka tabeli oraz poza tagami td i tr dodano th jako nagłówki tablei - również w wierszach-->
+        <table>
+            <thead>
+                <td>Przedmiot</td><td>Nazwisko</td><td>Ocena</td>
+            <tbody>
+                <td></td>
+
+        </table>
 
     </body>
 </html>

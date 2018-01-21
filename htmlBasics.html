@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Basisc</title>
-
+"http://pasja-informatyki.pl"
     <style>
         td, th{
             border: 2px solid blue;
@@ -14,7 +14,23 @@
 </head>
 
     <body>
-        <!--znacznik hiperłącza-->
+        <p>Lorem ipsum dolor sit amet, <strong>sinularis </strong> <b>consectetur </b><em>tureu</em> adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et iure doloribus accusamus officiis recusandae vel. Doloribus, consequuntur.</p> oraz inny ciekawy efekt to 100 m<sup>2</sup> dzięki znacznikowi "sup"
+        <p style="color:red; font-size:16px;"> test ostylowania inline</p>
+        Jeżeli będzie to np. wzór wody z małą dwójką to zastosujemy "sub" np. we wzorze chemicznym wody H<sub>2</sub>O
+        </p>
+        <hr>
+        <p>Ciekawy nieznany mi dotąd znaczni dający efekt pomniejszenia <small> jest "small"</small></p>
+
+        <p>Inny sposób na cytowanie tekstu to znacznik "q" ktory właśnie tak zmienia cytowany <q>taki oto jest efekt cytowania</q></p>
+
+        <blockquote cite="http://pasja-informatyki.pl">
+        <p>Jest to doskonałe źródło informacji</p>
+        </blockquote>
+        <footer>
+            <a href="http://pasja-informatyki.pl">Pasja informatyki</a>
+        </footer>
+
         <a href="http://pasja-informatyki.pl" target:"_blank"> Pasja informatyki</a>
 
         <img src="logo.jpg" alt="moje logo" width="250 " height="150 "/>
@@ -25,8 +41,6 @@
 
         <!-- zamiast podwójnego br powinno się stosować paragrafy -->
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et iure doloribus accusamus officiis recusandae vel. Doloribus, consequuntur.</p>
 
         <ol>
             <li>Królestwa Północy</li>
@@ -55,7 +69,20 @@
         </table>
 
         <br><br>
+
+            <p>Lorem ipsum dolor sit amet, consectetur <strong>sinulare</strong>adipisicing elit. Asperiores, distinctio, consequuntur? Repudiandae ducimus amet molestias soluta obcaecati, laborum similique excepturi eligendi nesciunt, aperiam officia sed corporis natus commodi sapiente quasi.</p>
+
         <form action="file.php" method="post">
+            <select multiple class="" name="">
+                <option value="m">Mario</option>
+                <option value="j" selected>John</option>
+                <option value="p">Paul</option>
+            </select>
+            <label for="one">Check</label><input type="checkbox" id="one">
+            <br><br>
+            <label for="odznacz">Man</label><input type="radio" name="sex" id="odznacz">
+            <label for="odznacz">Woman</label><input type="radio" name="sex" id="odznacz">
+            <br><br>
             <label for="comment">Skomentuj</label>
             <textarea id="comment" name="name" rows="8" cols="40"></textarea>
             <br><br>
@@ -63,7 +90,7 @@
             <input type="button" name="" value="click">
             <br><br>
             <input type="submit" name="" value="submit">
-            <button <img src="logo.jpg" alt="">Different button</button>
+            <button> <img src="logo.jpg" alt="">Send</button>
 
         </form>
         <!--Jako ciekawostka tabela może wystąpić bez tagów zamykających! oraz z częścią nagłówka tabeli oraz poza tagami td i tr dodano th jako nagłówki tablei - również w wierszach-->

@@ -184,7 +184,7 @@
     <ul>
         <li>var - zmienna utworzona w funkcji jest lokalna<strong> var cechuje zasięg funkcyjny</strong>, ale już np. w instrukcji warunkowej czyli w innych blokach niż funkcja var jest zawsze globalny</li>
         <li>let - tego rodzaju zmienna nie jest dodawana - jak var - do obiektu window;<strong>let cechuje zasięg blokowy</strong>;<br>let np. w instrukcji warunkowej w odróżnieniu od var nie staje się zmienną globalną(np. if "chroni" zakres tak jak funkcja)<br>
-        UWAGA! raz<strong>zadeklarowana</strong> nie daje się nadpisać <strong>ponowną deklaracją ( nie inną wartośćią to MOŻNA)!</strong></li>
+        UWAGA! raz <strong>zadeklarowana</strong> nie daje się nadpisać <strong>ponowną deklaracją ( nie inną wartośćią to MOŻNA)!</strong></li>
         <li>const</li>
     </ul>
     <li>Przysłanianie - to mechanizm w JS który sprawia, że zmienna zadeklarowana globalnie lub lokalnie ale z kolejną funkcją (funkcja w funkcji = zasięg lokalny w innym zasięgu lokalnym) w niej jest nadpisywana przez funkcje niższego "rzędu". Jeżeli funkcja "najgłębiej zagnieżdżona" nie ma zmiennej np. a którą chcę wyświetlić -> "sięga" do szerszego zasięgu aż do zmiennej globalnej (jeżeli nie ma innych a i zmienna globalna też ma nazwę "a")</li>
@@ -225,7 +225,7 @@
     <li>używać tak rzadko jak się da;</li>
     <li>zakres blokowy: NIE; (zadeklarowana globalnie zmienna bez problemu zostaje nadpisana lokalnie)
     hoisting: TAK;</li>
-    <li>ponowna deklaracja: TAK = następuje nadpisanie;</li>
+    <li>ponowna deklaracja: TAK;
     <li>dodanie do obiektu Window: TAK</li>
     <li>deklaracja bez jednoczesnej inicjalizacji: tak</li>
     </ul>
@@ -235,7 +235,8 @@
     <li>należy używać tak często jak się da - np. pętle</li>
     <li>zakres blokowy: tak (w tym dla funkcji)</li>
     <li>hoisting: nie</li>
-    <li>ponowna deklaracja: TAK = nadpisanie</li>
+    <li>ponowna deklaracja: NIE ale TAK => nadpisanie</li>
+    <br>czyli jak raz mam let test = x to nie moge znów <b>let test = y</b> TYLKO <strong>test = y</strong>;</li>
     <li>dodanie do obiektu Window: NIE</li>
     <li>deklaracja bez jednoczesnej inicjalizacji: tak</li>
     </ul>
@@ -245,7 +246,7 @@
     <ul>
     <li>należy używać tak często jak się da - np. pętle</li>
     <li>zakres blokowy: tak (w tym dla funkcji)</li>
-    <li>ponowna deklaracja: NIE = BŁĄD!</li>
+    <li>ponowna deklaracja ani nadpisanie: NIE = BŁĄD!</li>
     <li>dodanie do obiektu Window: NIE</li>
     <li>zabezpiecza przed zminaą wartość: TAK (OPRÓCZ OBIEKTÓW np. daną tablicę mogę modyfikować, ale tylko ten określony egzemplarz)</li>
     <li>zabezpiecza zmienną: TAK (przed nadpisaniem)</li>
